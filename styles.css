@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.arrows-container {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slides-container {
+    height: 500px;
+}
+
+.arrow {
+    padding: 10px 30px;
+    background-color: rgba(109, 109, 109, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-left: 32px;
+    margin-right: 32px;
+    height: max-content;
+}
+
+.arrow:hover {
+    background-color: rgba(177, 177, 177, 0.3);
+}
+
+
+.discs-container {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: default;
+    user-select: none;
+}
+
+.disc {
+    color: lightgray;
+}
+
+.selected i {
+    color: rgb(158, 158, 158);
+}
+
+i:hover {
+    transform: scale(1.2);
+    transition: transform 100ms ease-in-out;
+}
+
+i {
+    transition: transform 100ms ease-in-out;
+}
+
+.slide {
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+    position: absolute;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+
+/* transition only works when set the other way around: when active with opacity to 1 and regular img with opacity to 0 */
+

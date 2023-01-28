@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/cfe75fd61e.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="image-slider">
+            <div class="slides-container">
+                <img class="slide" src="photomode_02012023_005403.png" alt="night-city">
+                <img class="slide" src="photomode_13122022_005541.png" alt="night-city">
+                <img class="slide" src="photomode_19122022_235325.png" alt="night-city">
+                <img class="slide" src="photomode_28012023_012925.png" alt="night-city">
+                <img class="slide" src="photomode_31122022_005648.png" alt="night-city">
+            </div>
+            <div class="arrows-container">
+                <i class="arrow fa-solid fa-angle-left" onclick="showPreviousSlide()"></i>
+                <i class="arrow fa-solid fa-chevron-right" onclick="showNextSlide()"></i>
+            </div>
+        </div>
+        <div class="discs-container">
+            <span class="disc" onclick="showSelectedSlide(0)"><i class="fa-solid fa-circle"></i></span>
+            <span class="disc" onclick="showSelectedSlide(1)"><i class="fa-solid fa-circle"></i></span>
+            <span class="disc" onclick="showSelectedSlide(2)"><i class="fa-solid fa-circle"></i></span>
+            <span class="disc" onclick="showSelectedSlide(3)"><i class="fa-solid fa-circle"></i></span>
+            <span class="disc" onclick="showSelectedSlide(4)"><i class="fa-solid fa-circle"></i></span>
+        </div>
+    </div>
+</body>
+</html>
